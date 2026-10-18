@@ -16,11 +16,6 @@ Project goals
 - Keep default attack surface small; enable components explicitly
 - Provide tooling for safe, sandboxed exploit validation and triage
 
-Quick links
-- Docs: https://susano.example.com/docs (placeholder)
-- Issues: https://github.com/nikajoyboy/Susano/issues
-- Releases: https://github.com/nikajoyboy/Susano/releases
-
 Supported platforms
 - x86_64 (primary)
 - ARM64 (experimental)
