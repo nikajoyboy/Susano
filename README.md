@@ -29,15 +29,6 @@ Requirements (developer)
 - Python 3.10+
 - 8–16 GB RAM recommended
 
-Quickstart (dev)
-```bash
-git clone git@github.com:nikajoyboy/Susano.git
-cd Susano
-make setup        # prepares the dev environment
-make build-dev    # fast dev image build
-./scripts/run-qemu.sh out/dev/susano-dev.img
-```
-
 Typical workflows
 - Local development — iterate with `make build-dev` and `./scripts/run-qemu.sh`.
 - CI integration — run `make build-dev` in Actions to produce and upload dev artifacts.
