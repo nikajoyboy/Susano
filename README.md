@@ -70,9 +70,7 @@ Susano/
 
 
 Acknowledgements
-Thanks to the open-source projects and maintainers whose work Susano builds on.
 
-Contact
 - Project: Susano OS
 - Repository: https://github.com/nikajoyboy/Susano
 - Release (Pending)
