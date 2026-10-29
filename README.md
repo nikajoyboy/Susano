@@ -68,8 +68,6 @@ Susano/
 └── .gitignore
 ```
 
-License
-- MIT (see LICENSE)
 
 Acknowledgements
 Thanks to the open-source projects and maintainers whose work Susano builds on.
@@ -77,4 +75,4 @@ Thanks to the open-source projects and maintainers whose work Susano builds on.
 Contact
 - Project: Susano OS
 - Repository: https://github.com/nikajoyboy/Susano
-- Security contact: open an issue with the `security` label or see SECURITY.md
+- Release (Pending)
