@@ -1,8 +1,10 @@
 # Susano OS
 
+![Susano OS](assets/susano-os.svg)
+
 [![Status](https://img.shields.io/badge/status-active-blue)]() [![License](https://img.shields.io/badge/license-MIT-3b82f6)]()
 
-Susano OS is a security-first, modular operating system and tooling platform for reproducible testing, automation, and hardened deployments. Susano provides a minimal, auditable base with curated tooling for security research, CI integration, and deterministic builds.
+Susano OS is a security-first, modular operating system and tooling platform for reproducible testing, automation, and hardened deployments. Susano provides a minimal, auditable base with curated toolchains and operational workflows for defensive research, secure automation, and confidence-building validation.
 
 Highlights
 - Hardened base system with secure defaults
@@ -68,8 +70,7 @@ Susano/
 └── .gitignore
 ```
 
-
-Acknowledgements
+Acknowlegements
 
 - Project: Susano OS
 - Repository: https://github.com/nikajoyboy/Susano
