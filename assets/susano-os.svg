@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Susano OS terminal banner</title>
+  <desc id="desc">A stylized terminal interface showing the Susano OS title and menu.</desc>
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#d7c5ff" flood-opacity="0.55"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style><![CDATA[
+      .title {
+        font-family: "Courier New", monospace;
+        font-weight: 700;
+        font-size: 128px;
+        letter-spacing: -6px;
+        fill: #d7c9ff;
+        stroke: #8f6de2;
+        stroke-width: 8;
+        paint-order: stroke fill;
+      }
+      .subtitle {
+        font-family: "Courier New", monospace;
+        font-size: 28px;
+        fill: #cfc4ef;
+        letter-spacing: 1px;
+      }
+      .menu {
+        font-family: "Courier New", monospace;
+        font-size: 24px;
+        fill: #d9cffb;
+      }
+      .prompt {
+        font-family: "Courier New", monospace;
+        font-size: 26px;
+        fill: #d9cffb;
+        font-weight: 700;
+      }
+      .cursor {
+        fill: #d9cffb;
+      }
+      .panel {
+        fill: rgba(59, 74, 109, 0.22);
+        stroke: #d7c9ff;
+        stroke-width: 3;
+      }
+      .box {
+        fill: rgba(25, 30, 55, 0.3);
+        stroke: #d7c9ff;
+        stroke-width: 2;
+      }
+      .num {
+        fill: #d7c9ff;
+        font-weight: 700;
+      }
+      .tiny {
+        fill: #f0e8ff;
+        font-size: 18px;
+      }
+    ]]></style>
+  </defs>
+
+  <rect width="1280" height="720" fill="#0b1120"/>
+  <rect x="18" y="18" width="1244" height="684" fill="#111b32" opacity="0.9"/>
+
+  <g filter="url(#softShadow)">
+    <text x="640" y="195" text-anchor="middle" class="title" filter="url(#glow)">SUSANO_OS</text>
+  </g>
+
+  <text x="640" y="255" text-anchor="middle" class="subtitle">◦ Autonomous AI Cyber Defense Platform ◦</text>
+
+  <g>
+    <rect x="230" y="300" width="820" height="270" class="panel" rx="3"/>
+    <g class="menu" transform="translate(280,350)">
+      <text x="0" y="0"><tspan class="num">1)</tspan> Launch interactive scan <tspan class="tiny">(TUI mode)</tspan></text>
+      <text x="0" y="42"><tspan class="num">2)</tspan> Quick scan — local path</text>
+      <text x="0" y="84"><tspan class="num">3)</tspan> Quick scan — URL / domain</text>
+      <text x="0" y="126"><tspan class="num">4)</tspan> System status</text>
+      <text x="0" y="168"><tspan class="num">5)</tspan> First-boot / LLM setup</text>
+      <text x="0" y="210"><tspan class="num">6)</tspan> Screensaver</text>
+      <text x="0" y="252"><tspan class="num">7)</tspan> Open shell</text>
+      <text x="0" y="294"><tspan class="num">8)</tspan> Exit</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="215" y="605" class="prompt">◉ Select [1-8]:</text>
+    <rect x="477" y="585" width="18" height="28" class="cursor"/>
+  </g>
+</svg>
