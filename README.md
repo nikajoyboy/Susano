@@ -1,77 +1,48 @@
-# Susano OS
+<div align="center">
 
-![Susano OS](assets/susano-os.svg)
+# ⬡ SUSANO OS ⬡
+### Local-first AI-assisted security tooling — project concept and interface previews
 
-[![Status](https://img.shields.io/badge/status-active-blue)]() [![License](https://img.shields.io/badge/license-MIT-3b82f6)]()
+**Status: early-stage / implementation not yet verified**
 
-Susano OS is a security-first, modular operating system and tooling platform for reproducible testing, automation, and hardened deployments. Susano provides a minimal, auditable base with curated toolchains and operational workflows for defensive research, secure automation, and confidence-building validation.
+</div>
 
-Highlights
-- Hardened base system with secure defaults
-- Deterministic build pipeline for images and ISOs
-- Sandboxed runtime for safe PoC validation and tooling
-- CI-driven validation and signed release artifacts
+---
 
-Project goals
-- Provide a minimal, auditable OS image for research and testing
-- Enable reproducible builds and deterministic packaging
-- Keep default attack surface small; enable components explicitly
-- Provide tooling for safe, sandboxed exploit validation and triage
+## About
 
-Supported platforms
-- x86_64 (primary)
-- ARM64 (experimental)
-- QEMU / VirtualBox / VMware for testing
-- Containerized toolchain for CI builds
+Susano OS is a project concept for a local-first security research and defensive testing environment. The intended direction includes a terminal operator interface, local AI assistance, a report library, and integrations with security tools. This repository currently contains the README and visual SVG previews; it does **not** currently contain a runnable console, OS image, or the implementation described in some draft materials.
 
-Requirements (developer)
-- Linux host (Ubuntu/Debian recommended)
-- Docker
-- QEMU (for VM testing)
-- Python 3.10+
-- 8–16 GB RAM recommended
+Capabilities and commands mentioned in design material should be treated as proposals until implemented, tested, and documented against the actual code. No release artifacts or reproducible build instructions are available here yet.
 
-Typical workflows
-- Local development — iterate with `make build-dev` and `./scripts/run-qemu.sh`.
-- CI integration — run `make build-dev` in Actions to produce and upload dev artifacts.
-- Release — run reproducible `make build-release` in a pinned CI environment; sign artifacts and publish.
+## Interface previews
 
-Security & responsible use
-- Only test systems you own or explicitly have permission to test.
-- PoCs and exploit-work are provided for research and validation; do not use them against third-party systems without permission.
-- Follow the project SECURITY.md for disclosure and contact details.
+These are visual concepts, not screenshots of a running build:
 
-Contributing
-- Read CONTRIBUTING.md before opening PRs.
-- Keep changes small and well-documented.
-- Provide tests or reproducible steps for changes that affect builds or runtime behavior.
+| Companion concept | Boot-screen concept | Interactive-console concept |
+| --- | --- | --- |
+| ![Susano-chi companion interface](assets/companion-interface.svg) | ![Susano OS boot screen](assets/boot-screen.svg) | ![Susano OS interactive AI mode](assets/interactive-mode.svg) |
 
-Releases & signing
-- Release artifacts are signed with project GPG keys. Verify checksums and GPG signatures before trusting artifacts.
-- Release flow (high level): build in isolated CI → generate checksums → sign artifacts → create GitHub Release with artifacts.
+See [all interface previews](assets/README.md).
 
-Directory layout
-```
-Susano/
-├── boot/
-├── configs/
-├── docs/
-├── kernel/
-├── scripts/
-├── src/
-├── packages/
-├── tools/
-├── docker/
-├── out/
-├── Makefile
-├── README.md
-├── LICENSE
-├── SECURITY.md
-└── .gitignore
-```
+## Documentation
 
-Acknowlegements
+- [Step-by-step operator guide](docs/STEP_BY_STEP_GUIDE.md) — current project status, intended workflow, safety boundaries, and a release-readiness checklist.
 
-- Project: Susano OS
-- Repository: https://github.com/nikajoyboy/Susano
-- Release (Pending)
+## Responsible use and safety
+
+The intended use is authorized security work, defensive research, and education. Only test systems you own or have explicit permission to assess. Before presenting any feature as available, verify it in the source and a reproducible test environment. Any future scanning or request-replay functionality should have clear authorization prompts, scope controls, auditability, and safe defaults.
+
+## Contributing and feedback
+
+Feedback on the interface concepts, user needs, and release priorities is welcome through GitHub Issues. Contributions should include a clear description and reproducible evidence for implemented behavior. Do not submit real credentials, private tokens, or sensitive target data.
+
+## Current milestone
+
+The immediate milestone is to establish a working, testable implementation that matches the documented scope, then add CI, reproducible packaging, a threat model, and a signed preview release. Hardware upgrades are not a prerequisite for this documentation and design-preview stage; first identify a tested workload that requires additional GPU capacity.
+
+---
+
+<div align="center">
+<sub>Susano OS · Early-stage project · Interface previews are illustrative</sub>
+</div>
