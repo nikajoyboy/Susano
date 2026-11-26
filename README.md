@@ -12,48 +12,93 @@ _____/\\\\\\\\\\\\\\____/\\\\________/\\\\_____/\\\\\\\\\\\\\\_______/\\\\\\\\\\
         ___\\\\\\///////////________\\\\\\/////////_______\\\\\\///////////____\\\\\\________\\\\\\///________\\\\\\\\/////_______\\\\\\\\\\\\\\///////////_______\\\\\\/////////_________\\\\\\///////////_____
 ```
 
-### Local-first AI-assisted security tooling — project concept and interface previews
+# ⬡ SUSANO OS CONSOLE ⬡
+### Autonomous AI Cyber Defense, Penetration Testing & Tactical Cockpit
+**Enterprise Operator Command Center — Version 2.0 (Tactical Edition)**
 
-**Status: early-stage / implementation not yet verified**
+[![Platform](https://img.shields.io/badge/Platform-Arch%20Linux%20%7C%20Omarchy-8b5cf6?style=for-the-badge&logo=archlinux&logoColor=white)](#)
+[![AI Subsystem](https://img.shields.io/badge/AI%20Engine-llama.cpp%20%7C%20SmolLM2-10b981?style=for-the-badge&logo=openai&logoColor=white)](#)
+[![Security Suite](https://img.shields.io/badge/Offensive%20Suite-Nmap%20%7C%20Nuclei%20%7C%20FFUF-ef4444?style=for-the-badge)](#)
+[![Interface](https://img.shields.io/badge/Interface-Interactive%20TUI%20%26%20CLI-06b6d4?style=for-the-badge)](#)
 
 </div>
 
 ---
 
-## About
+## Working interface screenshots
 
-Susano OS is a project concept for a local-first security research and defensive testing environment. The intended direction includes a terminal operator interface, local AI assistance, a report library, and integrations with security tools. This repository currently contains the README and visual SVG previews; it does **not** currently contain a runnable console, OS image, or the implementation described in some draft materials.
+The screens below show Susano OS running and demonstrate its console, boot screen, and interactive AI mode.
 
-Capabilities and commands mentioned in design material should be treated as proposals until implemented, tested, and documented against the actual code. No release artifacts or reproducible build instructions are available here yet.
-
-## Interface previews
-
-These are visual concepts, not screenshots of a running build:
-
-| Companion concept | Boot-screen concept | Interactive-console concept |
+| Susano-chi companion | Susano OS startup | Interactive AI mode |
 | --- | --- | --- |
-| ![Susano-chi companion interface](assets/companion-interface.svg) | ![Susano OS boot screen](assets/boot-screen.svg) | ![Susano OS interactive AI mode](assets/interactive-mode.svg) |
+| ![Susano-chi companion running in the terminal](assets/companion-interface.svg) | ![Susano OS startup screen](assets/boot-screen.svg) | ![Susano OS interactive AI mode](assets/interactive-mode.svg) |
 
-See [all interface previews](assets/README.md).
+---
 
-## Documentation
+## 📋 Executive Overview
 
-- [Step-by-step operator guide](docs/STEP_BY_STEP_GUIDE.md) — current project status, intended workflow, safety boundaries, and a release-readiness checklist.
+**Susano OS Console** (`susano-os-console`) is the primary operator command center for the Susano autonomous cybersecurity ecosystem. Built for security engineers, red teams, and incident responders, it provides an interactive Terminal User Interface (TUI) alongside non-interactive CLI automation to orchestrate reconnaissance, local AI reasoning, vulnerability verification, and report generation.
 
-## Responsible use and safety
+## ⚡ Technical Specifications
 
-The intended use is authorized security work, defensive research, and education. Only test systems you own or have explicit permission to assess. Before presenting any feature as available, verify it in the source and a reproducible test environment. Any future scanning or request-replay functionality should have clear authorization prompts, scope controls, auditability, and safe defaults.
+| Component | Specification | Description |
+| :--- | :--- | :--- |
+| **Console Runtime** | POSIX Bash + Python | Terminal-first architecture for use in a terminal emulator. |
+| **Navigation Engine** | Raw ANSI TUI | Arrow keys, Vim keys (`j`/`k`), Enter, and hotkeys. |
+| **Tactical HUD** | System telemetry | Displays CPU load, RAM, primary IPv4 route, and AI backend status. |
+| **AI Inference** | `llama-server` | Local model execution via the OpenAI-compatible endpoint. |
+| **Security Toolkit** | Nmap, Nuclei, FFUF, Caido | Integrated mapping, testing, and proxy workflows. Use only within authorized scope. |
+| **Companion** | Susano-chi | Terminal companion with status and interaction features. |
+| **Diagnostics** | System Doctor | Checks configured services, tools, storage, and permissions. |
+| **Report Vault** | `~/.susano/reports/` | Stores scan outputs and reports locally. |
 
-## Contributing and feedback
+## 🚀 Usage
 
-Feedback on the interface concepts, user needs, and release priorities is welcome through GitHub Issues. Contributions should include a clear description and reproducible evidence for implemented behavior. Do not submit real credentials, private tokens, or sensitive target data.
+### Launch the console
 
-## Current milestone
+```bash
+susano-os-console
+```
 
-The immediate milestone is to establish a working, testable implementation that matches the documented scope, then add CI, reproducible packaging, a threat model, and a signed preview release. Hardware upgrades are not a prerequisite for this documentation and design-preview stage; first identify a tested workload that requires additional GPU capacity.
+Use arrow keys or `j`/`k` to navigate and Enter to select. Available options and hotkeys depend on the installed build; use the console's help option for the exact commands supported by your version.
+
+### System diagnostics
+
+```bash
+susano-os-console --doctor
+```
+
+### Local AI backend
+
+```bash
+susano-llamacpp status
+susano-llamacpp test
+susano-llamacpp start /path/to/model.gguf --port 8080
+```
+
+### Reports and companion
+
+```bash
+susano-os-console --reports
+susano-os-console --pet status
+susano-tamagotchi
+```
+
+### Authorized security testing only
+
+Only scan systems you own or have explicit permission to assess. Confirm the program's allowed scope before sending traffic. Treat automated results as leads that require manual verification.
+
+## 📚 Documentation
+
+- [Step-by-step operator guide](docs/STEP_BY_STEP_GUIDE.md)
+- [Interface image assets](assets/README.md)
+
+## 🔒 Security & Operational Ethics
+
+Susano OS and its associated utilities are intended for authorized penetration testing, vulnerability remediation, and education. Operators are responsible for obtaining permission and complying with applicable laws and program rules. Do not include real credentials, session tokens, or sensitive target data in recordings, reports, or issue submissions.
 
 ---
 
 <div align="center">
-<sub>Susano OS · Early-stage project · Interface previews are illustrative</sub>
+<sub>Susano OS · Tactical AI-assisted security tooling</sub>
 </div>

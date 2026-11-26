@@ -1,14 +1,14 @@
-# Susano OS interface previews
+# Susano OS interface screenshots
 
-These vector previews recreate the three interface concepts supplied for Susano OS. They are SVG images, so they remain sharp when viewed at different sizes.
+These images document the running Susano OS interfaces shown by the project: the Susano-chi companion, startup screen, and interactive AI mode.
 
-## Companion interface
+## Susano-chi companion
 
-![Susano-chi companion interface](companion-interface.svg)
+![Susano-chi companion running in the terminal](companion-interface.svg)
 
-## Boot screen
+## Startup screen
 
-![Susano OS boot screen](boot-screen.svg)
+![Susano OS startup screen](boot-screen.svg)
 
 ## Interactive AI mode
 
