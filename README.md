@@ -90,7 +90,6 @@ Only scan systems you own or have explicit permission to assess. Confirm the pro
 
 ## 📚 Documentation
 
-- [Step-by-step operator guide](docs/STEP_BY_STEP_GUIDE.md)
 - [Interface image assets](assets/README.md)
 
 ## 🔒 Security & Operational Ethics
