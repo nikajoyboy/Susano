@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="687" height="850" viewBox="0 0 687 850" role="img" aria-labelledby="title desc">
+  <title id="title">Susano OS interactive AI mode</title>
+  <desc id="desc">Terminal menu and example conversation with the Susano AI assistant.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#1d1b2b"/><stop offset="1" stop-color="#211e31"/></linearGradient>
+    <style>text{font:12px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#d9d2ec}.muted{fill:#9ba0b7}.purple{fill:#c077ff}.title{font:bold 74px ui-monospace,monospace;letter-spacing:-7px;fill:#c892ef;stroke:#eddbff;stroke-width:1}.outline{font:bold 74px ui-monospace,monospace;letter-spacing:-7px;fill:none;stroke:#8d3cff;stroke-width:2}</style>
+  </defs>
+  <rect width="687" height="850" fill="url(#bg)"/>
+  <text x="26" y="91" class="outline">SUSANO_OS</text><text x="23" y="87" class="title">SUSANO_OS</text>
+  <text x="61" y="137" class="purple">◦  SUSANO OS — Autonomous AI Cyber Defense &amp; Penetration Testing  ◦</text>
+  <text x="61" y="155" class="muted">Tactical AI Cockpit // Isolated Exploit Sandbox // Native Engine</text>
+  <text x="11" y="186"><tspan class="purple">1)</tspan> Interactive AI Mode (Direct Chat &amp; Tactical Command)</text>
+  <text x="11" y="202"><tspan class="purple">2)</tspan> Quick scan (local target path)</text>
+  <text x="11" y="218"><tspan class="purple">3)</tspan> Quick scan (URL / domain)</text>
+  <text x="11" y="234"><tspan class="purple">4)</tspan> System status (agents, sandbox, telemetry)</text>
+  <text x="11" y="250"><tspan class="purple">5)</tspan> llama.cpp Connection &amp; Server Manager</text>
+  <text x="11" y="266"><tspan class="purple">6)</tspan> First-boot / AI provider setup</text>
+  <text x="11" y="282"><tspan class="purple">7)</tspan> Launch Susano Tactical Screensaver</text>
+  <text x="11" y="298"><tspan class="purple">8)</tspan> Open terminal shell</text>
+  <text x="11" y="314"><tspan class="purple">9)</tspan> <tspan class="muted">Exit</tspan></text>
+  <text x="11" y="346">Select [1–9]: 1</text>
+  <text x="11" y="378" class="purple">Entering Susano Interactive Mode...</text>
+  <text x="26" y="398" fill="#48df9a">● AI Engine Online</text><text x="11" y="414" class="muted">Type 'help' for commands, or 'exit' / 'quit' to return.</text>
+  <path d="M11 424H650" stroke="#aaa2b6" stroke-dasharray="5 3"/>
+  <text x="11" y="444"><tspan class="purple">susano-ai ◦</tspan> hi how you doing?</text>
+  <text x="11" y="462">I'm doing great! It's been a while since I've had a chance to chat with you. I'm glad you're</text>
+  <text x="11" y="478">having a productive day. I'm here to help you with your cybersecurity concerns, whether it's a</text>
+  <text x="11" y="494">specific threat or a general understanding of cybersecurity best practices. I've been working</text>
+  <text x="11" y="510">on a new AI-powered threat detection system that's been gaining traction in the cybersecurity</text>
+  <text x="11" y="526">community. It's designed to detect and respond to a wide range of threats, from insider threats</text>
+  <text x="11" y="542">to external threats.</text>
+  <text x="11" y="578">I've been working on it for a while now, and I'm excited to share my findings with you. I've</text>
+  <text x="11" y="594">attached a few articles and blog posts that I think you might find interesting. Let me know if</text>
+  <text x="11" y="610">you have any questions or if you'd like to discuss it further.</text>
+  <text x="11" y="650">Also, I've been working on a new cybersecurity framework that's been gaining traction in the</text>
+  <text x="11" y="666">industry. It's designed to help organizations stay ahead of emerging threats and improve overall</text>
+  <text x="11" y="682">cybersecurity posture. I think it's a great idea, and I'd love to hear your thoughts on it.</text>
+  <text x="11" y="722">Let me know if you have any questions or if you'd like to discuss it further.</text>
+  <text x="11" y="758"><tspan class="purple">susano-ai ◦</tspan> <tspan fill="#ddd5f1">█</tspan></text>
+</svg>
